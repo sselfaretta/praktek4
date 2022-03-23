@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Hide and Show Element</title>
+  <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+  
+  <script>
+  //Inisiasi awal penggunaan jquery
+  $(document).ready(function(){
+  
+        //Menyembunyikan elemen gambar
+        $('.gambar').hide();        
+
+        //Pengaturan button tampil --> gambar tampil
+        $('.tampil').click(function(){
+          $('.gambar').show();
+        });
+
+        //Pengaturan button sembunyi --> gambar sembunyi
+        $('.sembunyi').click(function(){
+          $('.gambar').hide();        
+        });
+  });
+  </script>
+</head>
+
+<body>
+  <input type="button" class="sembunyi" value="Sembunyikan"/>
+  <input type="button" class="tampil" value="Tampilkan"/>
+  <br><br>
+  <input type="button" class="sembunyi" value="Sembunyikan"/>
+  <input type="button" class="tampil" value="Tampilkan"/>
+  <br><br>
+  <div class="gambar">
+    <img src="image.jpg"/> 
+  </div>
+</body>
+</html>

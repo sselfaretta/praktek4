@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Event Double Click</title>
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//kotak 1
+			$(".ubah").ready(function(){
+				$("#kotak").addClass("kuning")
+			});
+			$(".ubah").dblclick(function(){
+				$("#kotak").addClass("merah")
+			});
+
+			//kotak 2
+			$(".ubah2").ready(function(){
+				$("#kotak2").addClass("kuning")
+			});
+			$(".ubah2").dblclick(function(){
+				$("#kotak2").addClass("merah")
+			});
+
+			//kotak 3
+			$(".ubah3").ready(function(){
+				$("#kotak3").addClass("kuning")
+			});
+			$(".ubah3").dblclick(function(){
+				$("#kotak3").addClass("merah")
+			});
+
+			//kotak 4
+			$(".ubah4").ready(function(){
+				$("#kotak4").addClass("kuning")
+			});
+			$(".ubah4").dblclick(function(){
+				$("#kotak4").addClass("merah")
+			});
+		});
+	</script>
+	<style type="text/css">
+		.kuning {
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			display: inline-block;
+			margin-left: 20px;
+		}
+		.merah {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			display: inline-block;
+			margin-left: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<p>klik 2x pada setiap kotak untuk mengubah warnanya</p>
+	<br/>
+	<div class="ubah" id="kotak"></div>
+	<div class="ubah2" id="kotak2"></div>
+	<div class="ubah3" id="kotak3"></div>
+	<div class="ubah4" id="kotak4"></div>
+</body>
+</html>
